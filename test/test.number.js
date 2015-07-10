@@ -28,7 +28,9 @@ describe( 'number pdf', function tests() {
 	});
 
 	it( 'should evaluate the Gamma probability density function', function test() {
-		assert.closeTo( pdf( 2 ), alpha, beta, 1e-4 );
+		assert.closeTo( pdf( 1, alpha, beta ), 0.367879441, 1e-7 );
+		assert.closeTo( pdf( 4, alpha, beta ), 0.018315639, 1e-7 );
+		assert.closeTo( pdf( 6, alpha, beta ), 0.002478752, 1e-7 );
 	});
 
 });

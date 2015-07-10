@@ -201,8 +201,8 @@ it( 'should return an error if provided a `beta` parameter which is not a positi
 		var err;
 
 		err = validate( {}, {
-			'alpha': 1
-			'beta': 1
+			'alpha': 1,
+			'beta': 1,
 			'accessor': function getValue(){},
 			'copy': false,
 			'deepset': true,

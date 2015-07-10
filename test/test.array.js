@@ -20,7 +20,7 @@ var expect = chai.expect,
 
 describe( 'array pdf', function tests() {
 
-	var alpha = 1,
+	var alpha = 2,
 		beta = 1;
 
 	it( 'should export a function', function test() {
@@ -30,28 +30,14 @@ describe( 'array pdf', function tests() {
 	it( 'should evaluate the Gamma pdf', function test() {
 		var data, actual, expected, i;
 
-		data = [
-			1e-306,
-			-1e-306,
-			1e-299,
-			-1e-299,
-			0.8,
-			-0.8,
-			1,
-			-1,
-			10,
-			-10,
-			2,
-			-2,
-			3,
-			-3
-		];
+		data = [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 ];
 		actual = new Array( data.length );
 
 		actual = pdf( actual, data, alpha, beta );
 
 		expected = [
-
+			0.0000000000, 0.3678794412, 0.2706705665, 0.1493612051, 0.0732625556, 0.0336897350, 0.0148725131, 0.0063831738,
+			0.0026837010, 0.0011106882, 0.0004539993
 		];
 
 		for ( i = 0; i < actual.length; i++ ) {

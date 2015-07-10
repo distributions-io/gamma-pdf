@@ -20,8 +20,8 @@ var expect = chai.expect,
 
 describe( 'accessor pdf', function tests() {
 
-	var alpha = 1,
-		beta = 1;
+	var alpha = 3,
+		beta = 3;
 
 	it( 'should export a function', function test() {
 		expect( pdf ).to.be.a( 'function' );
@@ -31,20 +31,20 @@ describe( 'accessor pdf', function tests() {
 		var data, actual, expected, i;
 
 		data = [
-			{'x':-3},
-			{'x':-2},
-			{'x':-1},
 			{'x':0},
 			{'x':1},
 			{'x':2},
-			{'x':3}
+			{'x':3},
+			{'x':4},
+			{'x':5},
+			{'x':6}
 		];
 		actual = new Array( data.length );
 
 		actual = pdf( actual, data, alpha, beta,getValue );
 
 		expected = [
-
+			0.000000e+00, 6.721254e-01, 1.338526e-01, 1.499429e-02, 1.327150e-03, 1.032420e-04, 7.401770e-06
 		];
 
 		for ( i = 0; i < actual.length; i++ ) {
