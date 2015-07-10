@@ -7,7 +7,7 @@ Probability Density Function
 The [probability density function](https://en.wikipedia.org/wiki/Probability_density_function) (PDF) for a [Gamma](https://en.wikipedia.org/wiki/Gamma_distribution) random variable is
 
 <div class="equation" align="center" data-raw-text="f(x;\alpha,\beta)=\frac{\beta^\alpha}{\Gamma(\alpha)} x^{\alpha \,-\, 1} e^{- \beta x }" data-equation="eq:pdf_function">
-	<img src="" alt="Probability density function (PDF) for a Gamma distribution.">
+	<img src="https://cdn.rawgit.com/distributions-io/gamma-pdf/ac74c66f8909ae846f9f7fbd98205564118f0a6d/docs/img/eqn.svg" alt="Probability density function (PDF) for a Gamma distribution.">
 	<br>
 </div>
 
